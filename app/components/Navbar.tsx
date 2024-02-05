@@ -27,7 +27,7 @@ export default function Navbar() {
 
                 </Link>
                 <div className="">
-                    <img src="NAGA.png" className="h-14 w-14" />
+                    <img src="NAGA.png" alt="NAGA" className="h-14 w-14" />
                 </div>
                 <nav className="hidden gap-12 lg:flex 2xl:ml-16">
                     {links.map((link, idx) => (
