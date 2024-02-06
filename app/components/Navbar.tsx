@@ -10,6 +10,7 @@ const links = [
     { name: "Home", href: "/" },
     { name: "Men", href: "/Men" },
     { name: "Women", href: "/Women" },
+    
     //   { name: "Teens", href: "/Teens" },
     { name: "Unisex", href: "/Unisex" },
 ];
@@ -22,7 +23,7 @@ export default function Navbar() {
             <div className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">
                 <Link href="/">
                     <h1 className="text-2xl md:text-4xl font-bold">
-                        NAGA<span className="text-primary">Apparel</span>
+                        NAGA<span className="text-primary">SNAPBACKS</span>
                     </h1>
 
                 </Link>
