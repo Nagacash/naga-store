@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Agb from '../components/Agb';
 
-const Footer: React.FC = () => {
+export default function Footer () {
     const [showAgb, setShowAgb] = useState(false);
 
     const handleAgbClick = () => {
@@ -16,15 +16,15 @@ const Footer: React.FC = () => {
     };
 
     return (
-        <section className="bg-primary pt-5">
-            <div className="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8 flex">
+        <section className="bg-primary pt-5 mt-5">
+            <div className="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8 flex justify-center">
                 <nav className="flex flex-wrap justify-center -mx-5 -my-2">
                     <div className="px-5 py-2">
                         {/* AGB link with Link component */}
 
                         <Link href="/agb">
                             <h1 className="text-1xl md:text-2xl font-bold cursor-pointer text-gray-400 " onClick={handleAgbClick}>
-                                Click me - AGB & Policies
+                                Click me - AGBs 
                             </h1>
                         </Link>
                     </div>
@@ -79,5 +79,5 @@ const Footer: React.FC = () => {
     );
 };
 
-export default Footer;
+
 
